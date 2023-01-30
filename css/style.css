@@ -27,6 +27,7 @@ body {
 :root {
     --white-color: #FFFFFF;
     --blue-color: #00A4E5;
+    --gray-color-dark: #48555B;
     --gray-color: #979797;
     --gray-color-white: #D8D8D8;
 }
@@ -66,7 +67,9 @@ h4 {
     text-transform: uppercase;
     color: var(--white-color);
 }
-
+.nav {
+    border: 1px solid #E6E6E6;
+}
 .nav__menu {
     padding: 25px 0;
     display: flex;
@@ -90,11 +93,91 @@ h4 {
     text-transform: uppercase;
     color: #48555B;
     margin-right: 38px;
+    cursor: pointer;
+}
+.nav__link:hover {
+    color: var(--blue-color);
 }
 .nav__item:last-child {
     margin-right: 0;
 }
-
-h2 {
+.text-h2 {
+    font-size: 18px;
+    line-height: 21px;
     text-transform: uppercase;
+    letter-spacing: 2.3px;
+    color: #48555B;
+}
+.story__title {
+    text-align: center;
+    padding: 57px 0;
+
+    
+}
+.story__title:after {
+    content: "";
+    display: block;
+    margin: 10px auto 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+.story__inner {
+    display: flex;
+    margin-bottom: 118px;
+}
+.story__left {
+    width: 405px;
+    margin-right: 77px;
+    
+}
+.story__title-1 {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+    color: var(--gray-color-dark);
+    margin-bottom: 30px;
+}
+.blue-color {
+    color: var(--blue-color);
+}
+.text-h3 {
+}
+.story__text-p {
+}
+.text-p {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.2px
+}
+.story__right {
+    display: flex;
+    align-items: flex-end;
+}
+.story__item {
+    padding: 15px;
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0.19px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.story__item:last-child {
+    margin-right: 0;
+}
+.plan {
+    background-image: url(../img/plan.jpg);
+}
+.story__item-text {
+
+}
+.manage {
+    background-image: url(../img/manage.jpg);
+}
+.build {
+    background-image: url(../img/build.jpg);
 }
